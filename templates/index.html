@@ -23,7 +23,7 @@
     <h3>Axis Long Term Equity Fund - Direct Plan - Dividend option</h3>
     <form action="{{url_for('homepage')}}" method="POST">
       <input style="text-align:center" placeholder="Enter date of investment" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="given_date" value="{{given_date}}" max="2017-11-22" min="2015-04-01" title="Investment date" required><br>
-      <input style="text-align:center" type="number" placeholder="Enter Amount in Rs." name="amount" value="{{amount}}" title="Invested Amount" required><br>
+      <input style="text-align:center" type="number" placeholder="Enter Amount in Rs." name="amount" min="0" value="{{amount}}" title="Invested Amount" required><br>
       <input type="Submit" value="Calculate" class="submit"><br>
     </form>
     <br><h3>The calculated present worth value:<h3>
